@@ -18,7 +18,7 @@ public class HelloBean {
 	
 	public String getMessage(String name){		
 		if(name != null)
-			return "Hey " +name+", hello from EJB!";
+			return "Hello " +name+", welcome!";
 		else
 			return deafaultMessage;
 	}

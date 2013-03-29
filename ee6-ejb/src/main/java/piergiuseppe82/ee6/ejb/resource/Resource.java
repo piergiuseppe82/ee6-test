@@ -13,6 +13,6 @@ public class Resource {
 	
 	@Produces
 	public String getDeafaultMessage(){
-		return "Hello World from EJB!!";
+		return "Hello welcome!";
 	}
 }

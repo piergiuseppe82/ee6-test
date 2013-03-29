@@ -19,17 +19,10 @@ public class HelloObjectFactoryTest {
 	        ObjectFactory factory = new OpenEJBObjectFactory();
 	        factory.addClass(HelloStepdefs.class);
 
-	        // Scenario 1
 	        factory.start();
 	        HelloStepdefs o1 = factory.getInstance(HelloStepdefs.class);
 	        factory.stop();
 
-	        // Scenario 2
-	        factory.start();
-	        HelloStepdefs o2 = factory.getInstance(HelloStepdefs.class);
-	        factory.stop();
-
 	        Assert.assertNotNull(o1);
-	        Assert.assertNotSame(o1, o2);
 	    }
 }
